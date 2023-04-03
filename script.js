@@ -52,17 +52,17 @@ function winner() {
 }
 
 rock.addEventListener("click", function () {
-  playerPlay.textContent = rock.textContent;
+  playerPlay.textContent = rock.className;
   computer();
   winner();
 });
 paper.addEventListener("click", function () {
-  playerPlay.textContent = paper.textContent;
+  playerPlay.textContent = paper.className;
   computer();
   winner();
 });
 scissors.addEventListener("click", function () {
-  playerPlay.textContent = scissors.textContent;
+  playerPlay.textContent = scissors.className;
   computer();
   winner();
 });
