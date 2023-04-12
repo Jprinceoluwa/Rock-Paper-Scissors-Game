@@ -3,9 +3,9 @@ let computerplayed = document.querySelector(".computerplayed");
 let theWinner = document.querySelector(".winner");
 let playerCount = document.querySelector(".playercounts");
 let computercount = document.querySelector(".computercounts");
-const rock = document.querySelector(".rock");
-const paper = document.querySelector(".paper");
-const scissors = document.querySelector(".scissors");
+const rock = document.querySelector(".Rock");
+const paper = document.querySelector(".Paper");
+const scissors = document.querySelector(".Scissors");
 let computercounter = 0;
 let playerCounter = 0;
 let computerChoice;
@@ -43,7 +43,7 @@ function winner() {
     (computerplayed.textContent == "Scissors" &&
       playerPlay.textContent == "Rock")
   ) {
-    theWinner.textContent = "Player Wins";
+    theWinner.textContent = "You Win";
     playerCounter++;
     playerCount.textContent = playerCounter;
   } else {
